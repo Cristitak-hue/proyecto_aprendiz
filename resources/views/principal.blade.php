@@ -1,21 +1,22 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Sistema de Gestión Odontológica</title>
+    @vite(['resources/css/estilos.css','resources/css/estilosPlantilla.css'])
 </head>
  
 <body>
     <div id="contenedor">
         <div id="encabezado">
-            h1>Sistema de Gestión Odontológica</h1>
+            <h1>Sistema de Gestión Odontológica</h1>
         </div>
         <div id="menu">
             <ul>
                 <li><a href="">Inicio</a></li>
-                <li><a href="">Asignar</a></li>
+                <li><a href="{{route('asignar-cita')}}">Asignar</a></li>
                 <li><a href="">Consultar Cita</a></li>
-                <li><a href="">Cancelar Cita</a></li>
-                <li><a href="">Iniciar Sesión</a></li>
+                <li><a href="">Cancelar Cita</a></lsi>
+                <li><a href="{{ route('iniciar-sesion')}}">Iniciar Sesión</a></li>
             </ul>
         </div>
         <div id="contenido">
@@ -31,5 +32,4 @@
         </div>
     </div>
 </body>
- 
 </html>
